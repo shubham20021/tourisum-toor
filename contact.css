@@ -1,0 +1,605 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first{
+	font-family: 'my';
+	padding: 0px 40px 0px 40px;
+	background-color: #f5f5f500;;
+	position: relative;
+	z-index: 0;
+	border-radius: 0px 0px 199px 199px;
+}
+video{
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+.video-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 126px;
+}
+.contact-btn{
+    width: 350px;
+    height: 60px;
+    margin-top: 30%;
+    border-radius: 15px;
+    font-size: 25px;
+    border: none;
+    font-family: 'bodyy';
+    background-color: rgb(255, 0, 68);
+    color: white;
+    box-shadow: inset 0 0 0 0 #f9e506;
+    transition: ease-out 0.4s;
+    outline: none;
+    cursor: pointer;
+    
+}
+.contact-btn:hover{
+    box-shadow: inset 350px 0 0 0 #f9e506;
+    color: black;
+    letter-spacing: 2px;    
+}
+
+.contact-btn2{
+    width: 350px;
+    height: 60px;
+    margin-top: 30%;
+    border-radius: 15px;
+    font-size: 25px;
+    border: none;
+    font-family: 'bodyy';
+    background-color: rgb(22 0 208);
+    color: white;
+    box-shadow: inset 0 0 0 0 #06f95c;
+    transition: ease-out 0.4s;
+    outline: none;
+    cursor: pointer;
+    
+}
+.contact-btn2:hover{
+    box-shadow: inset 350px 0 0 0 #06f95c;
+    color: black;
+    letter-spacing: 2px;
+}
+.contact-ani{
+    position: absolute;
+    top: 10%;
+    left: calc(50% - (500px / 2));
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    transform: translateY(-200vh);
+    transition: 0.7s; 
+}
+.ani-work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ani-work > h1{
+    text-align: center;
+    margin: 11px 0;
+    font-size: 57px;
+    font-family: 'my';
+}
+.fa-comment{
+    color: blue;
+    margin-left: 15px;
+}
+.fa-phone{
+    margin-left: 12px;
+    color: #007f00;
+}
+.fa-envelope{
+    color: red;
+    margin-left: 12px;
+}
+
+.mail-us{
+    margin: 13px 0;
+    font-size: 30px;
+    font-family: 'my';
+    letter-spacing: 2px;
+}
+.mailing{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+    font-family:sans-serif;
+}
+.calling{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+.contact-name{
+    border: 1px solid;
+    height: 50px;
+    width: 358px;
+    margin: 17px auto;
+    font-size: 18px;
+}
+.trynew{
+    position: relative;
+    font-family: 'bodyy';
+}
+label[for="name"]{
+    position: absolute;
+    left: 22px;
+    top: 27px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+#name:focus + label[for=name], #name:valid + label[for=name]{
+    top: 5px;
+    background-color: white;
+}
+
+
+
+label[for="numbers"]{
+    position: absolute;
+    left: 22px;
+    top: 27px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+#numbers:focus + label[for=numbers], #numbers:valid + label[for=numbers]{
+    top: 5px;
+    background-color: white;
+}
+
+
+label[for="mail-to"]{
+    position: absolute;
+    left: 22px;
+    top: 27px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+#mail-to:focus + label[for=mail-to], #mail-to:valid + label[for=mail-to]{
+    top: 5px;
+    background-color: white;
+}
+
+.sad{
+    margin-top: 25px;
+    margin-bottom: 13px;
+}
+.crack{
+    position: absolute;;
+    top: -5px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    font-family: 'bodyy';
+    right: 20px;
+    transition: 0.2s;
+}
+.crack:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+.thank{
+    position: absolute;
+    top: 10%;
+    left: calc(50% - (698px / 2));
+    height: 672px;
+    width: 698px;
+    background-color: #fff;
+    border-radius: 10px;
+   transform: scale(0);
+}
+.fa-badge-check{
+    transform: scale(0);
+    margin-left: 12px;
+    color: #007f00;
+}
+.closing{
+    position: absolute;
+    left: calc(50% - (350px / 2));
+    right: calc(50% - (350px / 2));
+    transform: scale(0);
+    transition: 0.4s;
+}
+.last-close{
+    width: 350px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 25px;
+    border: none;
+    font-family: 'bodyy';
+    background-color: rgb(22 0 208);
+    color: white;
+    box-shadow: inset 0 0 0 0 #06f95c;
+    transition: ease-out 0.4s;
+    outline: none;
+    cursor: pointer;
+}
+
+.last-close:hover{
+    box-shadow: inset 350px 0 0 0 #06f95c;
+    color: black;
+    letter-spacing: 2px;    
+}
+.video-one{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* booking css */
+
+
+
+.booking-box{
+    position: absolute;
+    top: 12%;
+    left: calc(50% - (500px / 2));
+    width: 500px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    transform: translateY(-200vh);
+    transition: 0.7s; 
+}
+.intrnal-booking{
+    display: block;
+    height: 620px;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden scroll;
+}
+.keda{
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 35px;
+    border-radius: 25px 0px 25px 0px;
+}
+.flex-box{
+    display: flex;
+    margin-top: 0px;
+}
+
+.flex-box1{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.first-box1 > h1{
+    margin-left: 82px;
+    margin-top: 19px;
+    font-family: 'my';
+}
+.firstbox3{
+    display: block;
+    margin-left: 35px;
+    gap: 89px;
+    margin-top: 20px;
+    font-family: 'bodyy';
+}
+.lines{
+    position: absolute;
+    top: 235px;
+    height: 5px;
+    width: 500px;
+    left: 0;
+    background-color: rgb(255, 0, 68);
+    display: none;
+}
+
+.line1{
+    position: absolute;
+    top: 435px;
+    height: 5px;
+    width: 500px;
+    left: 0;
+    background-color: rgb(255, 0, 68);
+    display: none;
+}
+
+
+
+
+.ticket1{
+    width: 149px;
+    height: 43px;
+    margin-top: 6%;
+    border-radius: 15px;
+    font-size: 13px;
+    border: none;
+    font-family: 'bodyy';
+    background-color: rgb(33 163 163);
+    color: white;
+    box-shadow: inset 0 0 0 0 #08f5f5;
+    transition: ease-out 0.4s; 
+    outline: none;
+    cursor: pointer;
+    margin-left: 80px ;
+}
+.ticket1:hover{
+    box-shadow: inset 150px 0px 0px 0px #08f5f5;
+    color: black;
+    letter-spacing: 1px;    
+}
+
+
+.Upcoming_heading{
+    text-align: center;
+    margin: 14px 0;
+}
+
+.upcoming_span{
+    font-size: 30px;
+    font-family: 'bodyy';
+    text-transform: uppercase;
+    color: crimson;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+
+.upcoming_span::selection{
+    background-color: black;
+    color: white;
+}
+.fa-location-dot{
+    color: green;
+    --fa-animation-duration: 2s;
+    margin-left: 16px;
+}
+
+.first-mob{
+	display: flex;
+	justify-content: space-around;
+    align-items: center;
+	position: relative;
+	background-color: #ffffff85;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1100px){
+	.first-mob{
+		display: none;
+	}
+	.first{
+		display: block;
+	}
+	.twentyone{
+		justify-content: space-around;
+	}
+}
+
+@media (max-width: 1100px){
+	.first-mob{
+		display: flex;
+	}
+    .contact-ani{
+        position: absolute;
+        top: 20%;
+    }
+	.first{
+		display: none;
+	}
+	.nani{
+		width: 224px;
+		font-size: 19px;
+	}
+	.fiftien{
+		display: flex;
+		flex-direction: column;
+	}
+	.items{
+		width: 77%;
+    	height: 100%;
+	}
+	.main-text{
+		display: block;
+	}
+	.main-decktop-text{
+		display: none;
+	}
+    .ani-work > h1{
+        font-size: 36px;
+    }
+    .mail-us{
+        font-size: 20px;
+    }
+    .mailing{
+        font-size: 15px;
+    }
+    .calling{
+        font-size: 18px;
+    }
+    .contact-name{
+        width: 299px;
+    }
+    label[for="name"] {
+        position: absolute;
+        left:100px;
+        top: 30px;
+        font-size: 17px;
+        transition: 0.3s;
+    }
+    label[for="numbers"] {
+        position: absolute;
+        left:100px;
+        top: 30px;
+        font-size: 17px;
+        transition: 0.3s;
+    }
+    label[for="mail-to"] {
+        position: absolute;
+        left:100px;
+        top: 30px;
+        font-size: 17px;
+        transition: 0.3s;
+    }
+
+    
+}
+@media (max-width: 880px){
+	.video-btn{
+        display: flex;
+        gap: 49px;
+    }
+    .contact-btn{
+        margin-top: 40%;
+    }
+    .sad{
+        margin-top: 5% !important;
+        margin-bottom: 14px;
+    }
+    .contact-btn2{
+        margin-top: 40%;
+    }
+}
+@media (max-width: 740px){
+	.video-btn{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-btn{
+        margin-top: 40%;
+    }
+    .contact-btn2{
+        margin-top: 50px
+    }
+    .contact-ani{
+        top: 25%;
+    }
+}
+@media (max-width: 580px){
+    .contact-ani{
+        width: 390px;
+        left: calc(50% - (390px / 2));
+    }
+    .contact-ani {
+        top: 15%;
+    }
+    .booking-box {
+        left: calc(50% - (434px / 2));
+        width: 434px;
+    }
+    .keda{
+        margin-left: 18px;
+    }
+}
+@media (max-width: 500px){
+    .contact-ani{
+        width: 390px;
+        left: calc(50% - (390px / 2));
+    }
+    .contact-ani {
+        top: 15%;
+    }
+    .booking-box {
+        left: calc(50% - (397px / 2));
+        width: 397px;
+    }
+    .keda{
+        margin-left: 0px;
+        width: 100%;
+        height: auto;
+    }
+    .flex-box{
+        display: inline;
+    }
+    .ticket1{
+        margin-left: 56px;
+    }
+    .first-box1 > h1 {
+        font-size: 25px;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .firstbox3 {
+        display: flex;
+        margin-left: 27px;
+        gap: 55px;
+        margin-top: 20px;
+        font-family: 'bodyy';
+    }
+    .ticket1 {
+         margin-left: 118px; 
+    }
+}
+@media (max-width: 430px){
+	.booking-box {
+        left: calc(50% - (326px / 2));
+        width: 326px;
+    }
+    .firstbox3 {
+        display: flex;
+        margin-left: 9px;
+        gap: 14px;
+        margin-top: 20px;
+        font-family: 'bodyy';
+    }
+    .ticket1 {
+         margin-left: 80px;
+    }
+    
+}
+@media (max-width: 400px){
+	.video-btn{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-btn{
+        margin-top: 50%;
+        width: 220px;
+    }
+    .contact-btn2{
+        margin-top: 50px;
+        width: 220px;
+    }
+    .contact-ani {
+        width: 306px;
+        left: calc(50% - (306px / 2));
+    }
+    .crack {
+        position: absolute;
+        top: -8px;
+        font-size: 42px;
+        transform: rotate(45deg);
+        font-family: 'bodyy';
+        right: 5px;
+        transition: 0.2s;
+    }
+    .contact-ani {
+        top: 17%;
+    }
+    
+}
